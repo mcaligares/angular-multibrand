@@ -4,6 +4,7 @@
   "description": "Angular multibrand proyect using sass",
   "main": "README.md",
   "scripts": {
+    "start": "concurrently \"npm:brand-a\" \"npm:brand-b\" \"npm:brand-c\"",
     "install:brand-a": "cd project-brand-a && npm i",
     "install:brand-b": "cd project-brand-b && npm i",
     "install:brand-c": "cd project-brand-c && npm i",
@@ -26,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/mcaligares/angular-multibrand/issues"
   },
-  "homepage": "https://github.com/mcaligares/angular-multibrand#readme"
+  "homepage": "https://github.com/mcaligares/angular-multibrand#readme",
+  "dependencies": {
+    "concurrently": "^5.0.2"
+  }
 }
