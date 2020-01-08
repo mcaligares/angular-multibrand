@@ -1,0 +1,30 @@
+{
+  "name": "angular-multibrand",
+  "version": "1.0.0",
+  "description": "Angular multibrand proyect using sass",
+  "main": "README.md",
+  "scripts": {
+    "install:brand-a": "cd project-brand-a && npm i",
+    "install:brand-b": "cd project-brand-b && npm i",
+    "install:brand-c": "cd project-brand-c && npm i",
+    "build:brand-a": "cd project-brand-a && npm run build",
+    "build:brand-b": "cd project-brand-b && npm run build",
+    "build:brand-c": "cd project-brand-c && npm run build",
+    "brand-a": "cd project-brand-a && npm start -- --port=4201",
+    "brand-b": "cd project-brand-b && npm start -- --port=4202",
+    "brand-c": "cd project-brand-c && npm start -- --port=4203"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcaligares/angular-multibrand.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "mcaligares@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcaligares/angular-multibrand/issues"
+  },
+  "homepage": "https://github.com/mcaligares/angular-multibrand#readme"
+}
