@@ -4,7 +4,9 @@
   "description": "Angular multibrand proyect using sass",
   "main": "README.md",
   "scripts": {
-    "start": "concurrently \"npm:brand-a\" \"npm:brand-b\" \"npm:brand-c\"",
+    "start": "concurrently -c \"bgBlue.white,bgRed.white,bgCyan.white\" \"npm:brand-a\" \"npm:brand-b\" \"npm:brand-c\"",
+    "install": "concurrently -c \"bgBlue.white,bgRed.white,bgCyan.white\" \"npm:install:brand-a\" \"npm:install:brand-b\" \"npm:install:brand-c\"",
+    "build": "concurrently -c \"bgBlue.white,bgRed.white,bgCyan.white\" \"npm:build:brand-a\" \"npm:build:brand-b\" \"npm:build:brand-c\"",
     "install:brand-a": "cd project-brand-a && npm i",
     "install:brand-b": "cd project-brand-b && npm i",
     "install:brand-c": "cd project-brand-c && npm i",
