@@ -4,18 +4,21 @@
   "description": "Angular multibrand proyect using sass",
   "main": "README.md",
   "scripts": {
-    "start": "concurrently -c \"bgBlue.white,bgRed.white,bgCyan.white\" \"npm:brand-a\" \"npm:brand-b\" \"npm:brand-c\"",
-    "install": "concurrently -c \"bgBlue.white,bgRed.white,bgCyan.white\" \"npm:install:brand-a\" \"npm:install:brand-b\" \"npm:install:brand-c\"",
-    "build": "concurrently -c \"bgBlue.white,bgRed.white,bgCyan.white\" \"npm:build:brand-a\" \"npm:build:brand-b\" \"npm:build:brand-c\"",
+    "start": "concurrently -c \"bgBlue.white,bgRed.white,bgCyan.white\" \"npm:brand-a\" \"npm:brand-b\" \"npm:factory\"",
+    "install": "concurrently -c \"bgBlue.white,bgRed.white,bgCyan.white\" \"npm:install:brand-a\" \"npm:install:brand-b\" \"npm:install:factory\"",
+    "build": "concurrently -c \"bgBlue.white,bgRed.white,bgCyan.white\" \"npm:build:brand-a\" \"npm:build:brand-b\" \"npm:build:factory\"",
     "install:brand-a": "cd project-brand-a && npm i",
     "install:brand-b": "cd project-brand-b && npm i",
-    "install:brand-c": "cd project-brand-c && npm i",
+    "install:factory": "cd project-factory && npm i",
     "build:brand-a": "cd project-brand-a && npm run build",
     "build:brand-b": "cd project-brand-b && npm run build",
-    "build:brand-c": "cd project-brand-c && npm run build",
+    "build:factory:brand-x": "cd project-factory && npm run build -- -c=brand-x",
+    "build:factory:brand-y": "cd project-factory && npm run build -- -c=brand-y",
     "brand-a": "cd project-brand-a && npm start -- --port=4201",
     "brand-b": "cd project-brand-b && npm start -- --port=4202",
-    "brand-c": "cd project-brand-c && npm start -- --port=4203"
+    "factory": "cd project-factory && npm start -- --port=4203",
+    "factory:brand-x": "cd project-factory && npm start -- -c=brand-x",
+    "factory:brand-y": "cd project-factory && npm start -- -c=brand-y"
   },
   "repository": {
     "type": "git",
