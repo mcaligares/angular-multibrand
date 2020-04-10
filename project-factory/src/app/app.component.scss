@@ -1,0 +1,11 @@
+@import '../styles/variables';
+@import "~sample-styles-library/sass/mixins";
+
+.main {
+  &__title {
+    color: $primary;
+    @include forTabletScreen {
+      text-align: center;
+    }
+  }
+}

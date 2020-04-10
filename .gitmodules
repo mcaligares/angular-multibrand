@@ -1,0 +1,6 @@
+[submodule "sample-styles-library"]
+	path = sample-styles-library
+	url = git@github.com:mcaligares/sample-styles-library.git
+[submodule "angular-sample-component"]
+	path = angular-sample-component
+	url = git@github.com:mcaligares/angular-sample-component.git

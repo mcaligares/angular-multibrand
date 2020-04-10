@@ -1,0 +1,42 @@
+{
+  "name": "project-factory",
+  "version": "0.0.1",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "brand": "node scripts/brand.js",
+    "blue": "npm run brand -- --style=blue",
+    "green": "npm run brand -- --style=green",
+    "red": "npm run brand -- --style=red"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~9.0.6",
+    "@angular/common": "~9.0.6",
+    "@angular/compiler": "~9.0.6",
+    "@angular/core": "~9.0.6",
+    "@angular/forms": "~9.0.6",
+    "@angular/platform-browser": "~9.0.6",
+    "@angular/platform-browser-dynamic": "~9.0.6",
+    "@angular/router": "~9.0.6",
+    "angular-sample-component": "git+ssh://git@github.com:mcaligares/angular-sample-component.git",
+    "rxjs": "~6.5.4",
+    "sample-styles-library": "git+ssh://git@github.com/mcaligares/sample-styles-library.git",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.900.6",
+    "@angular/cli": "~9.0.6",
+    "@angular/compiler-cli": "~9.0.6",
+    "@angular/language-service": "~9.0.6",
+    "@types/node": "^12.11.1",
+    "ts-node": "~8.3.0",
+    "tslint": "~5.18.0",
+    "typescript": "~3.7.5"
+  }
+}
