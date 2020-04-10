@@ -4,12 +4,5 @@
  * `npm run brand -- --style=brand-1` replaces `_variables.scss` with `styles/brand-1.scss`.
  */
 
-/* BLUE - BRAND */
-$primary: #4D648D;
-
-$global-font: 'Times New Roman';
-
-
-
 // Import deafult variables
 @import './default_variables';
